@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display:inline-block;
+            width: 200px;
+        }
+        form>div{
+            margin-bottom: 20px;
+        
+        }
+        h4{
+        text-align: center;
+        font-size: 33px;
+        }
+        form{
+            background-color: aqua;
+        }
+        #button{
+            text-align: center;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <h4>Contact Us</h4>
+        <form method="get" action="./index1.html">
+            <div>
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname" minlength="5" maxlength="20" required>
+        </div>
+
+          <div>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" minlength="5" maxlength="20" required>
+          </div>
+          
+
+          <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" max="2024-09-21" min="2024-09-7">
+          </div>
+          <div>
+            <label for="aadhar">Aadhar Number</label>
+            <input type="text" id="aadhar" name="aadhar" pattern="^[2-9][0-9]{3}\s[0-9]{4}\s[0-9]{4}$" required>
+          </div>
+       
+          <div>
+            <label>Gender</label>
+            <label><input type="radio" name="Radio" id="maleRadio" value="Male"/>Male</label>
+            <label><input type="radio" name="Radio" id="FemaleRadio" value="FEMale"/>Female</label>
+          </div>
+
+          <div>
+            <label>Select Your Fav Subjects</label>
+            <label><input type="checkbox" name="subject" id="Hindi" value="Hindi"/>Hindi</label>
+            <label><input type="checkbox" name="subject" id="Marathi" value="Marathi"/>Marathi</label>
+            <label><input type="checkbox" name="subject" id="History" value="History"/>History</label>
+            <label><input type="checkbox" name="subject" id="Maths" value="Maths"/>Maths</label>
+            <label><input type="checkbox" name="subject" id="Computers" value="Computers"/>Computers</label>
+          </div>
+
+           <div>
+            <label for="Fav Movie">Select Your Fav Movie</label>
+            <select id="Fav Movie" name="Fav Movie" multiple>
+            <option value="Select">- Select Value From the list</option>
+            <option value="Terminator">Terminator</option>
+            <option value="Matrix">Matrix</option>
+            <option value="Tenet">Tenet</option>
+            </select>
+            
+           </div>
+           
+          <div>
+
+            <label for="color">Select your Fav Colour</label>
+            <input type="color" id="color" name="color"/>
+          </div>
+
+           
+          <div>
+
+            <label for="salary">Select Your Salary :=</label>
+           <div>10,000 <input type="range" id="salary" name="range" min="10000" max="50000" onchange="changeEventHandler(event)"/>50,000</div>
+          <div id="salaryOutput"></div>
+        </div>
+        <div>
+            <label for="About You">Tell Me About Yourself</label>
+            <textarea id="About you" name="About you"></textarea>
+        </div>
+        <div id="button">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Click Me</button>
+          </div>
+        </form>
+        <script>
+           function changeEventHandler(ev){
+            document.getElementById("salaryOutput").innerText =ev.target.value;
+         
+           }
+
+        </script>
+</body>
+
+</html>
