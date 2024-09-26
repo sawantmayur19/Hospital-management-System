@@ -7,10 +7,12 @@
     <style>
         li{
             display: inline;
+            
         }
      
         
     </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -75,12 +77,12 @@
       
        <section>
         <h4>Welcome to Wikipedia</h4>
-        <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="100%"></iframe>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="100%" height="75%"></iframe>
        </section>
        
        <section>
         <h4>Welcome to Sadguru Youtube Channel</h4>
-        <iframe width="50%" src="https://www.youtube.com/embed/UnUbbEHeXUk" title="How To Improve Your Focus &amp; Unleash Your Intelligence | Sadhguru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        <iframe width="50%" height="75%"  src="https://www.youtube.com/embed/UnUbbEHeXUk" title="How To Improve Your Focus &amp; Unleash Your Intelligence | Sadhguru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
        </section>
     </main>
 
@@ -89,26 +91,28 @@
         <form method="get" action="./index1.html">
             <div>
             <label for="fullname">Name</label>
-            <input type="text" id="fullname" name="fullname" minlength="5" maxlength="20" required>
+            <input type="text" id="fullname" name="fullname" minlength="5" maxlength="20" required placeholder="Enter Your Name">
         </div>
 
           <div>
             <label for="email">Email ID</label>
-            <input type="email" id="email" name="email" minlength="5" maxlength="20" required>
+            <input type="email" id="email" name="email" minlength="5" maxlength="20" required placeholder="Enter Your EMail ID">
           </div>
-          <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-            <button type="button">Click Me</button>
-          </div>
+          
 
           <div>
             <label for="dob">Date of Birth</label>
             <input type="date" id="dob" name="dob" max="2024-09-21" min="2024-09-7">
           </div>
-          <div></
+          <div>
             <label for="aadhar">Aadhar Number</label>
-            <input type="text" id="aadhar" name="aadhar" pattern="^[2-9][0-9]{3}\s[0-9]{4}\s[0-9]{4}$" required>
+            <input type="text" id="aadhar"  placeholder="Enter Your Aadhar Number"  name="aadhar" pattern="^[2-9][0-9]{3}\s[0-9]{4}\s[0-9]{4}$" required>
+          </div>
+
+          <div id="button">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Click Me</button>
           </div>
         </form>
      <a href="">Terms & Conditions</a>

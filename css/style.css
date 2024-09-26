@@ -1,0 +1,31 @@
+footer{
+    background-color: aquamarine;
+}
+
+label{
+    display:inline-block;
+    width: 150px;
+}
+
+form>div{
+    margin-bottom: 10px;
+
+}
+button{
+  
+}
+form>div>button{
+    text-align: center;
+}
+body{
+    margin: 10px 50px;
+    padding: 50px;
+    background-color: darkorange;
+    background-image: url("./../images/abstract-gradient-pastel-blue-and-purple-background-neon-pastel-color-template-for-website-or-presentation-free-free-vector.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+h1{
+    color: blue;background-color: rgb(130, 198, 238);
+    
+}
